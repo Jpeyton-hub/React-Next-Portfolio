@@ -20,6 +20,7 @@ nav {
   background-color: rgb(223, 223, 217);
 }
 
+
 footer {
   display: flex;
   align-items: center;
@@ -32,6 +33,8 @@ footer {
 main {
   
 }
+
+/* homepage */
 
 .introDiv {
   padding: 1.5rem;
@@ -77,3 +80,67 @@ hr {
   box-shadow: rgb(3, 3, 3) 5px 5px 5px;
 }
 
+/* contact page */
+
+.contactDiv {
+  text-align: center;
+  padding: 50px;
+  height: 80vh;
+}
+
+.emailline {
+  margin: 50px;
+}
+
+.mailto {
+  color: rgb(38, 202, 167);
+  transition-duration: .3s;
+}
+
+.mailto:hover {
+  letter-spacing: 3px;
+}
+
+/* projects page */
+
+.projectmain {
+  padding: 50px;
+  text-align: center;
+}
+
+.projtitle {
+  margin-bottom: 50px;
+}
+
+.gridtainer {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectcell {
+  text-align: center;
+  background-color: rgb(238, 227, 213);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.projsub {
+  margin-bottom: 20px;
+}
+
+.projlink {
+  text-align: center;
+  color: rgb(8, 153, 122);
+  transition-duration: .3s;
+}
+
+.projlink:hover {
+  letter-spacing: 1px;
+}
+
+.projectcell p {
+  margin: 20px auto;
+  text-align: justify;
+  width: 50%;
+}
