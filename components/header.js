@@ -1,9 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useSpring, animated, config } from "react-spring";
 
 const Header = () => {
+  const navProps = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 1000,
+    config: {
+        duration: 800
+    }
+  });
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <animated.nav
+      style={navProps}
+      className="navbar navbar-expand-lg navbar-light bg-light"
+    >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <Image src="/LogoBlack.png" height={50} width={50} />
@@ -22,29 +35,37 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link href='/'><a className="nav-link active" aria-current="page" href="#">
-                Home
-              </a></Link>
+              <Link href="/">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Home
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-            <Link href='/'><a className="nav-link" href="#">
-                Projects
-              </a></Link>
+              <Link href="/">
+                <a className="nav-link" href="#">
+                  Projects
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-            <Link href='/'><a className="nav-link" href="#">
-                About
-              </a></Link>
+              <Link href="/">
+                <a className="nav-link" href="#">
+                  About
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-            <Link href='/'><a className="nav-link" href="#">
-                Contact
-              </a></Link>
+              <Link href="/">
+                <a className="nav-link" href="#">
+                  Contact
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </animated.nav>
   );
 };
 
