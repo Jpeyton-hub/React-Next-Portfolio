@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "./header";
 import Footer from "./footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, home, contact, projects }) => {
   return (
     <>
       <Head>
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
           content="Personal portfolio made with Next.js!"
         />
       </Head>
-      <Header />
+      <Header home={home} contact={contact} projects={projects} />
       <main>{children}</main>
       <Footer />
 

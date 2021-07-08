@@ -7,7 +7,7 @@ const Footer = () => {
     const footProps = useSpring({
         to: { opacity: 1 },
         from: { opacity: 0 },
-        delay: 1300,
+        delay: 1000,
         config: {
             duration: 800
         }

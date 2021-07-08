@@ -2,8 +2,9 @@ import Layout from '../components/layout'
 
 const Contact = () => {
     return (
-        <Layout>
-
+        <Layout contact >
+            <h1>hello from contact</h1>
+            <a href='mailto:jpwalk319@gmail.com'>email me</a>
         </Layout>
     )
 }
