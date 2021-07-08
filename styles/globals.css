@@ -30,14 +30,47 @@ footer {
 }
 
 main {
-  height: 100vh;
+  
 }
 
-#canvasdiv {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -10;
-  background-color: rgb(48, 49, 49);
+.introDiv {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.descDiv {
+  margin-top: 40px;
+}
+
+hr {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 50%;
+}
+
+#aboutme {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+  text-align: justify;
+}
+
+.headshot {
+  border-radius: 5px;
+}
+
+#cvbtn {
+  border: black 1px solid;
+  padding: 2px 6px;
+  border-radius: 8px;
+  background-color: rgb(115, 236, 121);
+  transition-duration: .3s;
+  font-weight: 500;
+}
+
+#cvbtn:hover {
+  letter-spacing: 2px;
+  box-shadow: rgb(3, 3, 3) 5px 5px 5px;
 }

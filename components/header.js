@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useSpring, animated, config } from "react-spring";
+import { useSpring, animated } from "react-spring";
 
 const Header = () => {
   const navProps = useSpring({
@@ -45,13 +45,6 @@ const Header = () => {
               <Link href="/">
                 <a className="nav-link" href="#">
                   Projects
-                </a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/">
-                <a className="nav-link" href="#">
-                  About
                 </a>
               </Link>
             </li>
