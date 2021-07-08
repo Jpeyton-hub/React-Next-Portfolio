@@ -17,8 +17,27 @@ a {
 
 nav {
   border-bottom: 1px solid black;
+  background-color: rgb(223, 223, 217);
 }
 
-#threedbg {
-  
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  border-top: 1px solid black;
+  background-color: rgb(223, 223, 217);
+}
+
+main {
+  height: 100vh;
+}
+
+#canvasdiv {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background-color: rgb(48, 49, 49);
 }

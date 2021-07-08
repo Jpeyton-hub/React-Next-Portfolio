@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <animated.nav
       style={navProps}
-      className="navbar navbar-expand-lg navbar-light bg-light"
+      className="navbar navbar-expand-lg navbar-light"
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
