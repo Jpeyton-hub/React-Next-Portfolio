@@ -6,4 +6,4 @@
 ## [Link to deployed site](https://react-next-portfolio-neon.vercel.app/)
 
 
-![screenshot](/public/screenshot.jpeg)
+![screenshot](./screenshot.jpeg)
