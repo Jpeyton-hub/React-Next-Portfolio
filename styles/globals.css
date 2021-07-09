@@ -123,6 +123,7 @@ hr {
   background-color: rgb(238, 227, 213);
   padding: 20px;
   border-radius: 10px;
+  border: black 1px solid;
 }
 
 .projsub {
@@ -143,5 +144,5 @@ hr {
   margin: 20px auto;
   text-align: justify;
   width: 50%;
-  border: black 1px solid;
+  
 }
