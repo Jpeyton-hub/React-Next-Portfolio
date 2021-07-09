@@ -143,4 +143,5 @@ hr {
   margin: 20px auto;
   text-align: justify;
   width: 50%;
+  border: black 1px solid;
 }
