@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "./header";
 import Footer from "./footer";
+import Script from "next/script";
 
 const Layout = ({ children, home, contact, projects }) => {
   return (
@@ -21,6 +22,7 @@ const Layout = ({ children, home, contact, projects }) => {
       <Header home={home} contact={contact} projects={projects} />
       <main>{children}</main>
       <Footer />
+      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossOrigin="anonymous"></Script>
     </>
   );
 };
