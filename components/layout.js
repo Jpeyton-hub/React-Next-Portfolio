@@ -2,7 +2,8 @@ import Head from "next/head";
 import Header from "./header";
 import Footer from "./footer";
 import Script from "next/script";
-
+import Particles from "react-tsparticles";
+import particleOptions from "../particles.json";
 const Layout = ({ children, home, contact, projects }) => {
   return (
     <>
@@ -19,6 +20,7 @@ const Layout = ({ children, home, contact, projects }) => {
           content="Personal portfolio made with Next.js!"
         />
       </Head>
+      <Particles options={particleOptions} id="tsparticles"/>
       <Header home={home} contact={contact} projects={projects} />
       <main>{children}</main>
       <Footer />
